@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cq2r2xquax1fd"]
+
+[ext_resource type="Script" uid="uid://b4633h0qf0c7i" path="res://Main.gd" id="1_glv2v"]
+
+[node name="Main" type="Node2D" unique_id=1884097228]
+script = ExtResource("1_glv2v")
+
+[node name="ComplianceLabel" type="Label" parent="." unique_id=1743222070]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 43.0
+theme_override_font_sizes/font_size = 20
+
+[node name="CompassionLabel" type="Label" parent="." unique_id=142963140]
+offset_left = 20.0
+offset_top = 50.0
+offset_right = 60.0
+offset_bottom = 73.0
+
+[node name="ApplicantLabel" type="Label" parent="." unique_id=431497830]
+offset_left = 20.0
+offset_top = 120.0
+offset_right = 60.0
+offset_bottom = 143.0
+
+[node name="RequestLabel" type="Label" parent="." unique_id=898153393]
+offset_left = 20.0
+offset_top = 160.0
+offset_right = 60.0
+offset_bottom = 183.0
+
+[node name="DocumentsLabel" type="Label" parent="." unique_id=851838651]
+offset_left = 20.0
+offset_top = 200.0
+offset_right = 60.0
+offset_bottom = 223.0
+
+[node name="UrgencyLabel" type="Label" parent="." unique_id=179011334]
+offset_left = 20.0
+offset_top = 240.0
+offset_right = 60.0
+offset_bottom = 263.0
+
+[node name="FeedbackLabel" type="Label" parent="." unique_id=1002243861]
+offset_left = 20.0
+offset_top = 300.0
+offset_right = 60.0
+offset_bottom = 323.0
+
+[node name="ClearButton" type="Button" parent="." unique_id=1938273848]
+offset_left = 20.0
+offset_top = 360.0
+offset_right = 28.0
+offset_bottom = 368.0
+text = "Clear"
+
+[node name="HoldButton" type="Button" parent="." unique_id=1389294440]
+offset_left = 160.0
+offset_top = 360.0
+offset_right = 168.0
+offset_bottom = 368.0
+text = "Hold"
