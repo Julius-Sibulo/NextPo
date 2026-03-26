@@ -22,109 +22,94 @@ theme_override_constants/margin_bottom = 16
 layout_mode = 2
 
 [node name="TopRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=621218211]
-custom_minimum_size = Vector2(0, 300)
+custom_minimum_size = Vector2(0, 700)
 layout_mode = 2
 
 [node name="LeftPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1747776846]
-custom_minimum_size = Vector2(200, 0)
+custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
-size_flags_horizontal = 3
 
 [node name="MetersBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel" unique_id=308126817]
 layout_mode = 2
-alignment = 1
 
 [node name="ComplianceLabel" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=466771573]
 layout_mode = 2
-theme_override_font_sizes/font_size = 50
-vertical_alignment = 1
-
-[node name="ComplianceDelta" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=1187555285]
-layout_mode = 2
-vertical_alignment = 1
 
 [node name="CompassionLabel" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=792226216]
 layout_mode = 2
-theme_override_font_sizes/font_size = 50
 
-[node name="CompassionDelta" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=1103129442]
-layout_mode = 2
-
-[node name="CenterPanel" type="CenterContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1429101702]
-custom_minimum_size = Vector2(690, 0)
+[node name="CenterPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=2030553125]
 layout_mode = 2
 
 [node name="CitizenRect" type="ColorRect" parent="MarginContainer/VBoxContainer/TopRow/CenterPanel" unique_id=748570439]
-custom_minimum_size = Vector2(400, 500)
+custom_minimum_size = Vector2(700, 10)
 layout_mode = 2
-color = Color(0.66668326, 0.6651851, 0.6651851, 1)
+color = Color(1, 0.21568628, 1, 1)
 
 [node name="RightPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1919826602]
-custom_minimum_size = Vector2(350, 0)
+custom_minimum_size = Vector2(900, 0)
 layout_mode = 2
-size_flags_horizontal = 3
 
 [node name="RightBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TopRow/RightPanel" unique_id=1235814071]
 layout_mode = 2
-alignment = 1
 
 [node name="ChoicesGrid" type="GridContainer" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox" unique_id=83537986]
 layout_mode = 2
 columns = 2
 
 [node name="ChoiceA" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=1069287067]
-custom_minimum_size = Vector2(290, 150)
 layout_mode = 2
-size_flags_vertical = 3
 
 [node name="ChoiceB" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=472787227]
-custom_minimum_size = Vector2(290, 150)
 layout_mode = 2
 
 [node name="ChoiceC" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=2043365145]
-custom_minimum_size = Vector2(290, 150)
 layout_mode = 2
 
 [node name="ChoiceD" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=1995941233]
-custom_minimum_size = Vector2(290, 150)
 layout_mode = 2
 
 [node name="BottomPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=782304305]
-custom_minimum_size = Vector2(0, 500)
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="BottomVBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/BottomPanel" unique_id=1613048653]
-custom_minimum_size = Vector2(500, 300)
+custom_minimum_size = Vector2(0, 350)
 layout_mode = 2
 
-[node name="ScenarioLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=1655552237]
-layout_mode = 2
-vertical_alignment = 1
-
-[node name="DescriptionLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=168015727]
-layout_mode = 2
-vertical_alignment = 1
-
-[node name="DocsRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=1762408457]
-layout_mode = 2
-alignment = 1
-
-[node name="DocButton1" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/DocsRow" unique_id=630902188]
-custom_minimum_size = Vector2(80, 30)
+[node name="BottomBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer/BottomPanel" unique_id=1762408457]
 layout_mode = 2
 
-[node name="DocButton2" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/DocsRow" unique_id=1122205840]
-custom_minimum_size = Vector2(80, 80)
+[node name="DocButton1" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomBox" unique_id=630902188]
 layout_mode = 2
 
-[node name="DocButton3" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/DocsRow" unique_id=88376180]
-custom_minimum_size = Vector2(80, 80)
+[node name="DocButton2" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomBox" unique_id=1286995100]
 layout_mode = 2
 
-[node name="DocButton4" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/DocsRow" unique_id=1732033630]
-custom_minimum_size = Vector2(80, 80)
+[node name="DocButton3" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomBox" unique_id=1919647571]
+layout_mode = 2
+
+[node name="DocButton4" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomBox" unique_id=22484299]
 layout_mode = 2
 
 [node name="FeedbackLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1155210320]
+layout_mode = 2
+
+[node name="PopupOverlay" type="ColorRect" parent="." unique_id=614317672]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.70000005)
+
+[node name="PopupPanel" type="PanelContainer" parent="PopupOverlay" unique_id=1962806217]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PopupTitle" type="Label" parent="PopupOverlay/PopupPanel" unique_id=232955881]
+layout_mode = 2
+
+[node name="PopupDesc" type="Label" parent="PopupOverlay/PopupPanel" unique_id=920896956]
+layout_mode = 2
+
+[node name="PopupStatus" type="Label" parent="PopupOverlay/PopupPanel" unique_id=996752640]
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="PopupOverlay/PopupPanel" unique_id=573739708]
 layout_mode = 2
