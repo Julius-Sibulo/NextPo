@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1776792368
+::res://::1776794921
 ClientWindow.gd::GDScript::5145572643721952197::1776783648::0::1::::<>PanelContainer<><>0<>0<><>::
 End.gd::GDScript::7019411952670153959::1776783648::0::1::::<>Control<><>0<>0<><>::
 End.tscn::PackedScene::3130077059772278::1776783648::0::1::::<><><>0<>0<><>::uid://c7aixo3x33lfr::::res://End.gd
@@ -9,7 +9,7 @@ Global.gd::GDScript::5664484197513898744::1776783648::0::1::::<>Node<><>0<>0<><>
 GrapeSoda.ttf::FontFile::1804104506662220750::1776783648::1776783735::1::::<><><>0<>0<>8a72e20c3d3f54cffe60cd99f6454d15<>res://.godot/imported/GrapeSoda.ttf-a60e5536869277fe3c2b54b08673a197.fontdata::
 icon.svg::CompressedTexture2D::1114305864056189625::1776783648::1776783735::1::::<><><>0<>0<>80219a18aea9a4a8cdf5d0ff5c07b858<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 Main.gd::GDScript::7291735966367456996::1776792368::0::1::::<>Control<><>0<>0<><>::
-Main.tscn::PackedScene::3452227805294570627::1776792314::0::1::::<><><>0<>0<><>::uid://db5f3c5j1q4bo::::res://Main.gd<>uid://cfks3hdetv5qv::::res://ClientWindow.gd<>uid://dc64xn4tjhspg::::res://TimerBar.gd<>uid://bm2kwcf8pdn75::::res://EndOfDayReport.gd<>uid://mjti5fa6y413::::res://Rulebook.gd<>uid://b7clof44vgxcx::::res://Assets/rulebook.png<>uid://08plfjqqfbhw::::res://Assets/machine.png
+Main.tscn::PackedScene::3452227805294570627::1776793239::0::1::::<><><>0<>0<><>::uid://db5f3c5j1q4bo::::res://Main.gd<>uid://cfks3hdetv5qv::::res://ClientWindow.gd<>uid://dc64xn4tjhspg::::res://TimerBar.gd<>uid://bm2kwcf8pdn75::::res://EndOfDayReport.gd<>uid://mjti5fa6y413::::res://Rulebook.gd<>uid://b7clof44vgxcx::::res://Assets/rulebook.png<>uid://08plfjqqfbhw::::res://Assets/machine.png
 MainMenu.gd::GDScript::6115118662350146852::1776792107::0::1::::<>Control<><>0<>0<><>::
 MainMenu.tscn::PackedScene::3709849450552402638::1776791989::0::1::::<><><>0<>0<><>::uid://ctehd1ilvp0eq::::res://MainMenu.gd<>uid://0x6lqkw3rjis::::res://GrapeSoda.ttf<>uid://cflmmsy6hmrbp::::res://Assets/main-menu-bg-music.mp3
 MeterManager.gd::GDScript::1683699630071660843::1776783648::0::1::::<>Node<><>0<>0<><>::
@@ -18,7 +18,7 @@ NPCGenerator.gd::GDScript::2822277355008702614::1776783648::0::1::::<>EditorScri
 Rulebook.gd::GDScript::862015016123659124::1776783648::0::1::::<>PanelContainer<><>0<>0<><>::
 TimerBar.gd::GDScript::7365438043259737524::1776783648::0::1::::<>ProgressBar<><>0<>0<><>::
 W95FA.otf::FontFile::6361023817038853116::1776783648::1776783735::1::::<><><>0<>0<>4ad9409fe5df49d26af486f503a89d63<>res://.godot/imported/W95FA.otf-ff08eac390cfa17baba302063d815913.fontdata::
-::res://Assets/::1776792950
+::res://Assets/::1776792951
 clock-tick.mp3::AudioStreamMP3::5628242123265117449::1776791111::1776791133::1::::<><><>0<>0<>40da19d97ceaaaa3fb9b89f6e4c4ddac<>res://.godot/imported/clock-tick.mp3-b4bc506a038bb54ebaa4bda58fff5ffd.mp3str::
 machine.png::CompressedTexture2D::1823776232727769584::1776783648::1776783735::1::::<><><>0<>0<>b974451a8db0410d030f9cd22fbd7297<>res://.godot/imported/machine.png-51d1dd1e51271e0d8f747a6d31c9d09b.ctex::
 main-menu-bg-music.mp3::AudioStreamMP3::5147244758225030309::1776791499::1776791499::1::::<><><>0<>0<>5df456452e4c256bbcce523108289e77<>res://.godot/imported/main-menu-bg-music.mp3-50fa7e88a0ff63f759f9ebb91302afbf.mp3str::
