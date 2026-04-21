@@ -24,6 +24,8 @@ extends Control
 @onready var game_over_panel: PanelContainer = $GameOverPanel
 @onready var game_over_label: Label = $GameOverPanel/Label
 
+
+
 @onready var rulebook: PanelContainer = $Rulebook
 @onready var rulebook_btn: Button = $RulebookButton
 
@@ -34,13 +36,21 @@ extends Control
 @onready var doc_content: Label = $PopupLayer/DocumentViewer/HBoxContainer/TextVBox/DocContent
 @onready var close_doc_btn: Button = $PopupLayer/DocumentViewer/HBoxContainer/TextVBox/CloseDocButton
 
+@onready var music_player = $MusicPlayer
+
 var current_docs: Array = []
 var day_ended_by_timer: bool = false
+
+func play_game_music():
+	music_player.stream = load("res://Assets/clock-tick.mp3")
+	music_player.volume_db = 0
+	music_player.play()
 
 func _ready() -> void:
 	end_of_day_report.visible = false
 	game_over_panel.visible = false
 	feedback_label.text = ""
+	play_game_music()
 
 	choice_a.text = "Approve"
 	choice_b.text = "Reject"

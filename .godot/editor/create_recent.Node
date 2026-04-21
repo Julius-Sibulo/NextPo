@@ -1,3 +1,5 @@
+AudioStreamPlayer2D
+Sprite2D
 MarginContainer
 HBoxContainer
 TextureRect
@@ -10,5 +12,3 @@ ProgressBar
 TextureProgressBar
 ScrollContainer
 GridContainer
-RichTextLabel
-Sprite2D

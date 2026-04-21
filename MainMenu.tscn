@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://ctehd1ilvp0eq" path="res://MainMenu.gd" id="1_i26rj"]
 [ext_resource type="FontFile" uid="uid://0x6lqkw3rjis" path="res://GrapeSoda.ttf" id="2_eiy7p"]
+[ext_resource type="AudioStream" uid="uid://cflmmsy6hmrbp" path="res://Assets/main-menu-bg-music.mp3" id="3_h7a2f"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_eiy7p"]
+load_path = "res://.godot/imported/MainMenuBG.png-8461dbb50df0316347400a48ea930dea.ctex"
 
 [node name="MainMenu" type="Control" unique_id=163864716]
 layout_mode = 3
@@ -11,6 +15,7 @@ offset_bottom = 40.0
 script = ExtResource("1_i26rj")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=402321216]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -22,11 +27,13 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=686790925]
+visible = false
 layout_mode = 2
 theme_override_constants/separation = 50
 alignment = 1
 
 [node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=554210091]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("2_eiy7p")
@@ -35,6 +42,7 @@ text = "Next Po!"
 horizontal_alignment = 1
 
 [node name="SubtitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1952518206]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Public Service Simulator"
@@ -42,6 +50,26 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=361941847]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 100
 text = "PLAY"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=341721885]
+show_behind_parent = true
+position = Vector2(963, 546.5)
+scale = Vector2(1.0031251, 1.0120369)
+texture = SubResource("CompressedTexture2D_eiy7p")
+
+[node name="PlayButton" type="Button" parent="." unique_id=550571257]
+layout_mode = 0
+offset_left = 848.0
+offset_top = 796.0
+offset_right = 1096.0
+offset_bottom = 899.0
+theme_override_font_sizes/font_size = 100
+text = "PLAY"
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1855259657]
+stream = ExtResource("3_h7a2f")
+autoplay = true

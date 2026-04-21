@@ -328,8 +328,9 @@ layout_mode = 2
 layout_mode = 0
 offset_left = 79.0
 offset_top = 515.0
-offset_right = 330.0
-offset_bottom = 814.0
+offset_right = 1171.0
+offset_bottom = 1603.0
+scale = Vector2(0.3, 0.3)
 text = "
 "
 icon = ExtResource("6_3dxm6")
@@ -388,6 +389,8 @@ layout_mode = 2
 [node name="CloseDocButton" type="Button" parent="PopupLayer/DocumentViewer/HBoxContainer/TextVBox" unique_id=962265870]
 layout_mode = 2
 text = "Close Document"
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=316054334]
 
 [connection signal="pressed" from="EndOfDayReport/MarginContainer/VBoxContainer/ContinueButton" to="EndOfDayReport" method="_on_continue_button_pressed"]
 [connection signal="pressed" from="EndShiftButton" to="." method="_on_end_shift_button_pressed"]
