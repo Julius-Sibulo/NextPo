@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://b6sl3tegyvt0m"]
+
+[ext_resource type="Script" uid="uid://cprgwkh0u54r5" path="res://NPCData.gd" id="1_ih81q"]
+
+[resource]
+script = ExtResource("1_ih81q")
+npc_id = "gen_npc_8"
+display_name = "Felix Flores"
+appearance_description = "Keeps tapping their fingers rhythmically on the glass."
+lore_stages = ["They are sending money back to their family in the province."]
+documents_per_visit = [[{
+"content": "Standard Citizen ID. Issued 2022. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Class B Labor Contract. Valid for 2 years.",
+"doc_type": "Employment Visa",
+"flaw": "",
+"is_valid": true
+}]]
+consequence_if_approved = "They started their new job and sent a thank-you note."
+consequence_if_rejected = "They lost the job offer and remain unemployed."
+consequence_if_requested = "They begged their employer for an extension to get the updated form."
+consequence_if_escalated = "The supervisor handled the case and warned them about proper procedure."

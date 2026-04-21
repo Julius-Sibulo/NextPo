@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://db6t7bdyv8pkb"]
+
+[ext_resource type="Script" uid="uid://cprgwkh0u54r5" path="res://NPCData.gd" id="1_yb3nr"]
+
+[resource]
+script = ExtResource("1_yb3nr")
+npc_id = "gen_npc_6"
+display_name = "Rafael Santos"
+appearance_description = "Dressed in heavily stained work clothes."
+lore_stages = ["They need this clearance to visit their family in the quarantine zone."]
+documents_per_visit = [[{
+"content": "Standard Citizen ID. Issued 2022. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Cleared by Dr. Vance. (Notice: Dr. Vance lost his license in 2024).",
+"doc_type": "Health Record",
+"flaw": "Suspended Doctor",
+"is_valid": false
+}], [{
+"content": "Standard Citizen ID. Issued 2022. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Cleared by City Hospital. No hazards detected.",
+"doc_type": "Health Record",
+"flaw": "",
+"is_valid": true
+}]]
+consequence_if_approved = "They crossed the border. A minor outbreak occurred a week later."
+consequence_if_rejected = "They were denied entry and had to return home sick."
+consequence_if_requested = "They had to pay double for an expedited, legal checkup."
+consequence_if_escalated = "The supervisor handled the case and warned them about proper procedure."

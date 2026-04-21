@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://cgipsbl2o2st8"]
+
+[ext_resource type="Script" uid="uid://cprgwkh0u54r5" path="res://NPCData.gd" id="1_m8buq"]
+
+[resource]
+script = ExtResource("1_m8buq")
+npc_id = "gen_npc_21"
+display_name = "Luna Reyes"
+appearance_description = "Smelling faintly of bleach and old paper."
+lore_stages = ["They just bought a food cart with their life savings.", "They brought a small basket of pastries, hoping to bribe you."]
+documents_per_visit = [[{
+"content": "Standard Citizen ID. Issued 2021. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Authorized to sell goods. 'OUTSTANDING BALANCE: $4,500' stamped in red.",
+"doc_type": "Merchant License",
+"flaw": "Unpaid Fees",
+"is_valid": false
+}], [{
+"content": "Standard Citizen ID. Issued 2021. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Authorized to sell goods in Sector 7.",
+"doc_type": "Merchant License",
+"flaw": "",
+"is_valid": true
+}]]
+consequence_if_approved = "Their business flourished in the new sector."
+consequence_if_rejected = "Their cart was confiscated by patrol officers the next day."
+consequence_if_requested = "They lost a week of revenue waiting for the paperwork to clear."
+consequence_if_escalated = "The supervisor handled the case and warned them about proper procedure."

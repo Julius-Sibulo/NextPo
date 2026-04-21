@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://brs1alxtqck"]
+
+[ext_resource type="Script" uid="uid://c7aixo3x33lfr" path="res://End.gd" id="1_lm0ep"]
+
+[node name="End" type="Control" unique_id=381375432]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_lm0ep")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1334503747]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=872408051]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1860808860]
+layout_mode = 2
+theme_override_font_sizes/font_size = 150
+text = "CLOCKED OUT"
+
+[node name="ComplianceResultLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1210076447]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+
+[node name="CompassionResultLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=2128267299]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+
+[node name="ResultLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1446214199]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+
+[node name="DescriptionLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1297483011]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+
+[node name="PlayAgainButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=862782543]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "MAIN MENU"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=760695369]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "QUIT"

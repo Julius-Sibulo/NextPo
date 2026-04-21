@@ -1,0 +1,393 @@
+[gd_scene format=3 uid="uid://bpgjxm3rdt124"]
+
+[ext_resource type="Script" uid="uid://db5f3c5j1q4bo" path="res://Main.gd" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://cfks3hdetv5qv" path="res://ClientWindow.gd" id="2_uu6xs"]
+[ext_resource type="Script" uid="uid://dc64xn4tjhspg" path="res://TimerBar.gd" id="3_r0du0"]
+[ext_resource type="Script" uid="uid://bm2kwcf8pdn75" path="res://EndOfDayReport.gd" id="4_cm0pq"]
+[ext_resource type="Script" uid="uid://mjti5fa6y413" path="res://Rulebook.gd" id="5_fos0i"]
+[ext_resource type="Texture2D" uid="uid://b7clof44vgxcx" path="res://Assets/rulebook.png" id="6_3dxm6"]
+[ext_resource type="Texture2D" uid="uid://08plfjqqfbhw" path="res://Assets/machine.png" id="7_lgr22"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trn2v"]
+border_color = Color(0.0021362335, 0.0021362344, 0.0021362312, 1)
+shadow_size = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fos0i"]
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgr22"]
+bg_color = Color(0.9019608, 0.8666667, 0.77254903, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16862746, 0.16862746, 0.16862746, 1)
+shadow_size = 12
+shadow_offset = Vector2(0, 6)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dxm6"]
+corner_detail = 10
+shadow_size = 4
+shadow_offset = Vector2(0, 2)
+
+[node name="Main" type="Control" unique_id=1359709777]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_glv2v")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=84180547]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=444952785]
+layout_mode = 2
+
+[node name="TopRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=621218211]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="LeftPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1747776846]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MetersBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel" unique_id=1333014799]
+clip_contents = true
+layout_mode = 2
+
+[node name="ComplianceLabel" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=466771573]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+vertical_alignment = 1
+
+[node name="ComplianceBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=628772155]
+clip_contents = true
+layout_mode = 2
+
+[node name="CompassionLabel" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=792226216]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+
+[node name="CompassionBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=109131303]
+clip_contents = true
+layout_mode = 2
+
+[node name="TrustLabel" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=138012904]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+
+[node name="TrustBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=901981385]
+clip_contents = true
+layout_mode = 2
+
+[node name="CenterPanel" type="CenterContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1429101702]
+custom_minimum_size = Vector2(690, 0)
+layout_mode = 2
+
+[node name="CitizenSprite" type="TextureRect" parent="MarginContainer/VBoxContainer/TopRow/CenterPanel" unique_id=1291161880]
+layout_mode = 2
+
+[node name="RightPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1919826602]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RightBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TopRow/RightPanel" unique_id=1235814071]
+layout_mode = 2
+alignment = 1
+
+[node name="ChoicesGrid" type="GridContainer" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox" unique_id=83537986]
+layout_mode = 2
+columns = 2
+
+[node name="ChoiceA" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=1069287067]
+custom_minimum_size = Vector2(290, 150)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 40
+
+[node name="ChoiceB" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=472787227]
+custom_minimum_size = Vector2(290, 150)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="ChoiceC" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=2043365145]
+custom_minimum_size = Vector2(290, 150)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 40
+
+[node name="ChoiceD" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=1995941233]
+custom_minimum_size = Vector2(290, 150)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 40
+
+[node name="BottomPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=782304305]
+custom_minimum_size = Vector2(650, 250)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_trn2v")
+
+[node name="BottomVBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/BottomPanel" unique_id=1613048653]
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 2
+
+[node name="ScenarioLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=1655552237]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+vertical_alignment = 1
+
+[node name="DescriptionLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=168015727]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+vertical_alignment = 1
+
+[node name="ButtonRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=1762408457]
+layout_mode = 2
+alignment = 1
+
+[node name="DocButton1" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/ButtonRow" unique_id=630902188]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+
+[node name="DocButton2" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/ButtonRow" unique_id=1122205840]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="DocButton3" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/ButtonRow" unique_id=88376180]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="DocButton4" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/ButtonRow" unique_id=1732033630]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="FeedbackLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1155210320]
+layout_mode = 2
+
+[node name="ClientWindow" type="PanelContainer" parent="." unique_id=1577414438]
+layout_mode = 0
+offset_left = 705.0
+offset_top = 21.0
+offset_right = 1202.0
+offset_bottom = 306.0
+script = ExtResource("2_uu6xs")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ClientWindow" unique_id=1803027709]
+layout_mode = 2
+
+[node name="Portrait" type="TextureRect" parent="ClientWindow/VBoxContainer" unique_id=247024055]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="ClientWindow/VBoxContainer" unique_id=144783532]
+layout_mode = 2
+
+[node name="AppearanceLabel" type="Label" parent="ClientWindow/VBoxContainer" unique_id=1149967852]
+layout_mode = 2
+
+[node name="MemoryGreeting" type="Label" parent="ClientWindow/VBoxContainer" unique_id=2082804183]
+layout_mode = 2
+
+[node name="LoreLabel" type="Label" parent="ClientWindow/VBoxContainer" unique_id=2063278653]
+layout_mode = 2
+
+[node name="TimerBar" type="ProgressBar" parent="." unique_id=1766796709]
+layout_mode = 0
+offset_left = 1677.0
+offset_top = 349.0
+offset_right = 1850.0
+offset_bottom = 389.0
+show_percentage = false
+script = ExtResource("3_r0du0")
+
+[node name="ClockLabel" type="Label" parent="TimerBar" unique_id=860035974]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 11.0
+offset_right = 181.0
+offset_bottom = 39.0
+
+[node name="EndOfDayReport" type="PanelContainer" parent="." unique_id=793829647]
+layout_mode = 0
+offset_left = 748.0
+offset_top = 210.0
+offset_right = 1152.0
+offset_bottom = 774.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fos0i")
+script = ExtResource("4_cm0pq")
+
+[node name="MarginContainer" type="MarginContainer" parent="EndOfDayReport" unique_id=425696135]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EndOfDayReport/MarginContainer" unique_id=257264136]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="DayLabel" type="Label" parent="EndOfDayReport/MarginContainer/VBoxContainer" unique_id=1164861747]
+layout_mode = 2
+
+[node name="ContinueButton" type="Button" parent="EndOfDayReport/MarginContainer/VBoxContainer" unique_id=1737258664]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "Continue"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="EndOfDayReport/MarginContainer/VBoxContainer" unique_id=2063230513]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+
+[node name="ReportContainer" type="VBoxContainer" parent="EndOfDayReport/MarginContainer/VBoxContainer/ScrollContainer" unique_id=123857028]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_constants/separation = 25
+
+[node name="GameOverPanel" type="PanelContainer" parent="." unique_id=1758343572]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 349.0
+offset_right = 88.0
+offset_bottom = 389.0
+
+[node name="Label" type="Label" parent="GameOverPanel" unique_id=226051778]
+visible = false
+layout_mode = 2
+
+[node name="Rulebook" type="PanelContainer" parent="." unique_id=1409856813]
+custom_minimum_size = Vector2(400, 500)
+layout_mode = 1
+offset_left = 771.0
+offset_top = 370.0
+offset_right = 1171.0
+offset_bottom = 870.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lgr22")
+script = ExtResource("5_fos0i")
+
+[node name="MarginContainer" type="MarginContainer" parent="Rulebook" unique_id=489150722]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Rulebook/MarginContainer" unique_id=960942091]
+layout_mode = 2
+
+[node name="SectionLabel" type="Label" parent="Rulebook/MarginContainer/VBoxContainer" unique_id=1189412958]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+
+[node name="PrintedText" type="RichTextLabel" parent="Rulebook/MarginContainer/VBoxContainer" unique_id=1377554622]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="HandwrittenText" type="RichTextLabel" parent="Rulebook/MarginContainer/VBoxContainer" unique_id=263633519]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Rulebook/MarginContainer/VBoxContainer" unique_id=888010571]
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="PrevButton" type="Button" parent="Rulebook/MarginContainer/VBoxContainer/HBoxContainer" unique_id=761208383]
+layout_mode = 2
+
+[node name="NextButton" type="Button" parent="Rulebook/MarginContainer/VBoxContainer/HBoxContainer" unique_id=2089537017]
+layout_mode = 2
+
+[node name="PageLabel" type="Label" parent="Rulebook/MarginContainer/VBoxContainer/HBoxContainer" unique_id=452967270]
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="Rulebook/MarginContainer/VBoxContainer" unique_id=222026326]
+layout_mode = 2
+
+[node name="RulebookButton" type="Button" parent="." unique_id=815245339]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 515.0
+offset_right = 330.0
+offset_bottom = 814.0
+text = "
+"
+icon = ExtResource("6_3dxm6")
+
+[node name="EndShiftButton" type="Button" parent="." unique_id=390496587]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.5
+offset_left = 1430.0
+offset_top = 572.0
+offset_right = 1788.0
+offset_bottom = 799.0
+text = "End Shift"
+icon = ExtResource("7_lgr22")
+
+[node name="PopupLayer" type="CanvasLayer" parent="." unique_id=446555024]
+layer = 5
+
+[node name="DocumentViewer" type="PanelContainer" parent="PopupLayer" unique_id=883258778]
+custom_minimum_size = Vector2(400, 300)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3dxm6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PopupLayer/DocumentViewer" unique_id=745666363]
+layout_mode = 2
+
+[node name="DocPhoto" type="TextureRect" parent="PopupLayer/DocumentViewer/HBoxContainer" unique_id=1133938915]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextVBox" type="HBoxContainer" parent="PopupLayer/DocumentViewer/HBoxContainer" unique_id=1984691431]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DocTitle" type="Label" parent="PopupLayer/DocumentViewer/HBoxContainer/TextVBox" unique_id=639843756]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DocContent" type="Label" parent="PopupLayer/DocumentViewer/HBoxContainer/TextVBox" unique_id=234385545]
+layout_mode = 2
+
+[node name="CloseDocButton" type="Button" parent="PopupLayer/DocumentViewer/HBoxContainer/TextVBox" unique_id=962265870]
+layout_mode = 2
+text = "Close Document"
+
+[connection signal="pressed" from="EndOfDayReport/MarginContainer/VBoxContainer/ContinueButton" to="EndOfDayReport" method="_on_continue_button_pressed"]
+[connection signal="pressed" from="EndShiftButton" to="." method="_on_end_shift_button_pressed"]

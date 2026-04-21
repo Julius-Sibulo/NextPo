@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://b2guhm3621pf3"]
+
+[ext_resource type="Script" uid="uid://cprgwkh0u54r5" path="res://NPCData.gd" id="1_qfe8r"]
+
+[resource]
+script = ExtResource("1_qfe8r")
+npc_id = "gen_npc_0"
+display_name = "Rosa Castillo"
+appearance_description = "Dressed in heavily stained work clothes."
+lore_stages = ["The rent at their current place tripled last month."]
+documents_per_visit = [[{
+"content": "Standard Citizen ID. Issued 2021. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "District 4 Housing Transfer. Approved and stamped.",
+"doc_type": "Zoning Form",
+"flaw": "",
+"is_valid": true
+}]]
+consequence_if_approved = "They packed up and moved the next day."
+consequence_if_rejected = "They were forced to stay in their current, unsafe apartment."
+consequence_if_requested = "They rushed to fix the paperwork and barely made it back before closing."
+consequence_if_escalated = "The supervisor handled the case and warned them about proper procedure."

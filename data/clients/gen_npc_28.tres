@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://b8aptft2b868r"]
+
+[ext_resource type="Script" uid="uid://cprgwkh0u54r5" path="res://NPCData.gd" id="1_6jmnb"]
+
+[resource]
+script = ExtResource("1_6jmnb")
+npc_id = "gen_npc_28"
+display_name = "Felix Rivera"
+appearance_description = "An older citizen leaning heavily on a wooden cane."
+lore_stages = ["They cough heavily into a handkerchief."]
+documents_per_visit = [[{
+"content": "Standard Citizen ID. Issued 2022. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Health Record. Resting heart rate is listed as 0 BPM.",
+"doc_type": "Health Record",
+"flaw": "Falsified Vitals",
+"is_valid": false
+}], [{
+"content": "Standard Citizen ID. Issued 2022. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Cleared by City Hospital. No hazards detected.",
+"doc_type": "Health Record",
+"flaw": "",
+"is_valid": true
+}]]
+consequence_if_approved = "They crossed the border. A minor outbreak occurred a week later."
+consequence_if_rejected = "They were denied entry and had to return home sick."
+consequence_if_requested = "They had to pay double for an expedited, legal checkup."
+consequence_if_escalated = "The supervisor handled the case and warned them about proper procedure."
