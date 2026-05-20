@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://h4hodut3crnu"]
+
+[node name="TutorialOverlay" type="CanvasLayer" unique_id=1163051286]
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1533757581]
+layout_direction = 4
+offset_left = 4.0
+offset_top = 653.0
+offset_right = 1904.0
+offset_bottom = 1015.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1192236901]
+layout_mode = 2
+
+[node name="SpeakerName" type="Label" parent="PanelContainer/VBoxContainer" unique_id=15782991]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "MY SKIBIDI MANAGER
+"
+
+[node name="DialogueText" type="RichTextLabel" parent="PanelContainer/VBoxContainer" unique_id=823073751]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=426413541]
+custom_minimum_size = Vector2(90, 100)
+layout_mode = 2
+alignment = 2
+
+[node name="SkipButton" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=978223532]
+layout_mode = 2
+text = "SKIP>>>"
+
+[node name="NextButton" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=602984899]
+layout_mode = 2
+text = "NEXT>"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1468427909]
+visible = false
+offset_right = 1918.0
+offset_bottom = 1067.0
+color = Color(0, 0, 0, 0.586)

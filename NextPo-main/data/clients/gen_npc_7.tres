@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://bhk5uueu3qn5r"]
+
+[ext_resource type="Script" uid="uid://cprgwkh0u54r5" path="res://NPCData.gd" id="1_bkwp0"]
+
+[resource]
+script = ExtResource("1_bkwp0")
+npc_id = "gen_npc_7"
+display_name = "Gabriel Vargas"
+appearance_description = "Holding a crying infant in one arm while sorting papers."
+lore_stages = ["The rent at their current place tripled last month."]
+documents_per_visit = [[{
+"content": "Standard Citizen ID. Issued 2022. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "District 4 Housing Transfer. The name on the lease doesn't match their ID.",
+"doc_type": "Zoning Form",
+"flaw": "Wrong Name",
+"is_valid": false
+}], [{
+"content": "Standard Citizen ID. Issued 2022. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "District 4 Housing Transfer. Approved and stamped.",
+"doc_type": "Zoning Form",
+"flaw": "",
+"is_valid": true
+}]]
+consequence_if_approved = "They packed up and moved the next day."
+consequence_if_rejected = "They were forced to stay in their current, unsafe apartment."
+consequence_if_requested = "They rushed to fix the paperwork and barely made it back before closing."
+consequence_if_escalated = "The supervisor handled the case and warned them about proper procedure."

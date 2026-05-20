@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://cdviu1uy02ybg"]
+
+[ext_resource type="Script" uid="uid://cprgwkh0u54r5" path="res://NPCData.gd" id="1_1eqih"]
+
+[resource]
+script = ExtResource("1_1eqih")
+npc_id = "gen_npc_22"
+display_name = "Luna Castillo"
+appearance_description = "Smelling faintly of bleach and old paper."
+lore_stages = ["They are trying to legitimize a family business."]
+documents_per_visit = [[{
+"content": "Standard Citizen ID. Issued 2021. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Authorized to sell goods. The Tax Identification Number is missing.",
+"doc_type": "Merchant License",
+"flaw": "Missing Tax ID",
+"is_valid": false
+}], [{
+"content": "Standard Citizen ID. Issued 2021. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Authorized to sell goods in Sector 7.",
+"doc_type": "Merchant License",
+"flaw": "",
+"is_valid": true
+}]]
+consequence_if_approved = "Their business flourished in the new sector."
+consequence_if_rejected = "Their cart was confiscated by patrol officers the next day."
+consequence_if_requested = "They lost a week of revenue waiting for the paperwork to clear."
+consequence_if_escalated = "The supervisor handled the case and warned them about proper procedure."
