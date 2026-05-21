@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://btkyecw2hvr00"]
+
+[ext_resource type="Script" uid="uid://cprgwkh0u54r5" path="res://NPCData.gd" id="1_ef4ip"]
+
+[resource]
+script = ExtResource("1_ef4ip")
+npc_id = "gen_npc_25"
+display_name = "Valeria Navarro"
+appearance_description = "Dressed in heavily stained work clothes."
+lore_stages = ["They are trying to move closer to the hospital."]
+documents_per_visit = [[{
+"content": "Standard Citizen ID. Issued 2023. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "District 4 Housing Transfer. Approved and stamped.",
+"doc_type": "Zoning Form",
+"flaw": "",
+"is_valid": true
+}]]
+consequence_if_approved = "They packed up and moved the next day."
+consequence_if_rejected = "They were forced to stay in their current, unsafe apartment."
+consequence_if_requested = "They rushed to fix the paperwork and barely made it back before closing."
+consequence_if_escalated = "The supervisor handled the case and warned them about proper procedure."

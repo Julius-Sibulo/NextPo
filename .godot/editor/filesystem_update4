@@ -1,0 +1,9 @@
+res://Main.tscn
+res://EndOfDayReport.gd
+res://GameManager.gd
+res://Main.gd
+res://Mainnpcs.gd
+res://MeterManager.gd
+res://Rulebook.gd
+res://MainMenu.tscn
+res://MainMenu.gd

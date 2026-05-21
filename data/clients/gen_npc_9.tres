@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://bjmbaassrmdty"]
+
+[ext_resource type="Script" uid="uid://cprgwkh0u54r5" path="res://NPCData.gd" id="1_5tnn5"]
+
+[resource]
+script = ExtResource("1_5tnn5")
+npc_id = "gen_npc_9"
+display_name = "Rafael Santos"
+appearance_description = "Holding a crying infant in one arm while sorting papers."
+lore_stages = ["They've been unemployed for 8 months."]
+documents_per_visit = [[{
+"content": "Standard Citizen ID. Issued 2022. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Class B Labor Contract. Expired 3 weeks ago.",
+"doc_type": "Employment Visa",
+"flaw": "Expired",
+"is_valid": false
+}], [{
+"content": "Standard Citizen ID. Issued 2022. Details match.",
+"doc_type": "ID",
+"flaw": "",
+"is_valid": true
+}, {
+"content": "Class B Labor Contract. Valid for 2 years.",
+"doc_type": "Employment Visa",
+"flaw": "",
+"is_valid": true
+}]]
+consequence_if_approved = "They started their new job and sent a thank-you note."
+consequence_if_rejected = "They lost the job offer and remain unemployed."
+consequence_if_requested = "They begged their employer for an extension to get the updated form."
+consequence_if_escalated = "The supervisor handled the case and warned them about proper procedure."

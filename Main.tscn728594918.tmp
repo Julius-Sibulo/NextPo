@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://bpgjxm3rdt124"]
+
+[ext_resource type="Script" uid="uid://db5f3c5j1q4bo" path="res://Main.gd" id="1_glv2v"]
+
+[node name="Main" type="Control" unique_id=1359709777]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_glv2v")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=84180547]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=444952785]
+layout_mode = 2
+
+[node name="TopRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=621218211]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="LeftPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1747776846]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MetersBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel" unique_id=308126817]
+layout_mode = 2
+alignment = 1
+
+[node name="ComplianceLabel" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=466771573]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+vertical_alignment = 1
+
+[node name="ComplianceDelta" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=1187555285]
+layout_mode = 2
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="CompassionLabel" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=792226216]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+
+[node name="CompassionDelta" type="Label" parent="MarginContainer/VBoxContainer/TopRow/LeftPanel/MetersBox" unique_id=1103129442]
+layout_mode = 2
+horizontal_alignment = 2
+
+[node name="CenterPanel" type="CenterContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1429101702]
+custom_minimum_size = Vector2(690, 0)
+layout_mode = 2
+
+[node name="CitizenSprite" type="TextureRect" parent="MarginContainer/VBoxContainer/TopRow/CenterPanel" unique_id=1471568079]
+custom_minimum_size = Vector2(200, 300)
+layout_mode = 2
+expand_mode = 2
+stretch_mode = 5
+
+[node name="RightPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1919826602]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RightBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TopRow/RightPanel" unique_id=1235814071]
+layout_mode = 2
+alignment = 1
+
+[node name="ChoicesGrid" type="GridContainer" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox" unique_id=83537986]
+layout_mode = 2
+columns = 2
+
+[node name="ChoiceA" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=1069287067]
+custom_minimum_size = Vector2(290, 150)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 40
+
+[node name="ChoiceB" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=472787227]
+custom_minimum_size = Vector2(290, 150)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="ChoiceC" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=2043365145]
+custom_minimum_size = Vector2(290, 150)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="ChoiceD" type="Button" parent="MarginContainer/VBoxContainer/TopRow/RightPanel/RightBox/ChoicesGrid" unique_id=1995941233]
+custom_minimum_size = Vector2(290, 150)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="BottomPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=782304305]
+custom_minimum_size = Vector2(0, 500)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BottomVBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/BottomPanel" unique_id=1613048653]
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 2
+
+[node name="ScenarioLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=1655552237]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+vertical_alignment = 1
+
+[node name="DescriptionLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=168015727]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+vertical_alignment = 1
+
+[node name="DocsRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=1762408457]
+layout_mode = 2
+alignment = 1
+
+[node name="DocButton1" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/DocsRow" unique_id=630902188]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+
+[node name="DocButton2" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/DocsRow" unique_id=1122205840]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="DocButton3" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/DocsRow" unique_id=88376180]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="DocButton4" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/DocsRow" unique_id=1732033630]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="FeedbackLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1155210320]
+layout_mode = 2
