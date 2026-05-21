@@ -1,0 +1,14 @@
+Label
+TextureRect
+RichTextLabel
+PanelContainer
+Button
+MarginContainer
+ColorRect
+HBoxContainer
+VBoxContainer
+CanvasLayer
+AudioStreamPlayer2D
+Sprite2D
+ProgressBar
+TextureProgressBar
