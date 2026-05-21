@@ -1,3 +1,4 @@
+AudioStreamPlayer
 Label
 TextureRect
 RichTextLabel
@@ -11,4 +12,3 @@ CanvasLayer
 AudioStreamPlayer2D
 Sprite2D
 ProgressBar
-TextureProgressBar

@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://b7clof44vgxcx" path="res://Assets/rulebook.png" id="6_3dxm6"]
 [ext_resource type="Texture2D" uid="uid://08plfjqqfbhw" path="res://Assets/machine.png" id="7_lgr22"]
 [ext_resource type="Script" uid="uid://dwyfut3j6ev6n" path="res://TutorialOverlay.gd" id="8_trn2v"]
+[ext_resource type="AudioStream" uid="uid://dkei6gjddal0v" path="res://Assets/Busy Street (optional, effect in game).mp3" id="9_20pc6"]
+[ext_resource type="AudioStream" uid="uid://dujlpe4g1ksji" path="res://Assets/Crowd Chatter Background Ambience Sound Effect.mp3" id="10_20pc6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trn2v"]
 border_color = Color(0.0021362335, 0.0021362344, 0.0021362312, 1)
@@ -100,7 +102,6 @@ custom_minimum_size = Vector2(670, 300)
 layout_mode = 2
 texture = ExtResource("2_wkp8b")
 expand_mode = 2
-stretch_mode = 5
 
 [node name="RightPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1919826602]
 custom_minimum_size = Vector2(350, 0)
@@ -388,6 +389,14 @@ layout_mode = 2
 text = "Close Document"
 
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=316054334]
+stream = ExtResource("9_20pc6")
+volume_db = -5.25
+autoplay = true
+
+[node name="MusicPlayer2" type="AudioStreamPlayer2D" parent="." unique_id=1151329903]
+stream = ExtResource("10_20pc6")
+volume_db = 8.833
+autoplay = true
 
 [node name="TutorialOverlay" type="CanvasLayer" parent="." unique_id=1230024577]
 script = ExtResource("8_trn2v")
