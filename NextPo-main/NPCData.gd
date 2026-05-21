@@ -3,8 +3,18 @@ extends Resource
 
 @export var npc_id: String = ""
 @export var display_name: String = ""
+@export var true_name: String = ""
+@export var id_number: String = ""
+@export var request_type: String = ""
 @export var portrait_texture: Texture2D
 @export var appearance_description: String = ""
+@export var gender: String = ""
+@export var age_group: String = ""
+@export var body_frame: Vector2i = Vector2i(-1, -1)
+@export var expression_frame: Vector2i = Vector2i(-1, -1)
+@export var shirt_frame: Vector2i = Vector2i(-1, -1)
+@export var hair_frame: Vector2i = Vector2i(-1, -1)
+@export var accessory_frame: Vector2i = Vector2i(-1, -1)
 
 @export var interaction_history: Array = []
 @export var lore_stages: Array = []

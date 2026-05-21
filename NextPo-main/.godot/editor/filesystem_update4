@@ -1,5 +1,6 @@
-res://IntroCutscene.gd
-res://IntroCutscene.tscn
+res://Main.gd
 res://Main.tscn
+res://NPCGenerator.gd
 res://MainMenu.tscn
 res://End.tscn
+res://IntroCutscene.tscn

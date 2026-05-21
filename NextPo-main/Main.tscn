@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://db5f3c5j1q4bo" path="res://Main.gd" id="1_glv2v"]
 [ext_resource type="Texture2D" uid="uid://bmb6w8n0fgx2q" path="res://Assets/table.png" id="2_03owx"]
-[ext_resource type="Script" uid="uid://cfks3hdetv5qv" path="res://ClientWindow.gd" id="2_uu6xs"]
+[ext_resource type="Texture2D" uid="uid://ca0vf35q1d4ly" path="res://Assets/WaitingRoomBG.png" id="2_wkp8b"]
 [ext_resource type="Script" uid="uid://dc64xn4tjhspg" path="res://TimerBar.gd" id="3_r0du0"]
 [ext_resource type="Script" uid="uid://bm2kwcf8pdn75" path="res://EndOfDayReport.gd" id="4_cm0pq"]
 [ext_resource type="Script" uid="uid://mjti5fa6y413" path="res://Rulebook.gd" id="5_fos0i"]
@@ -43,10 +43,6 @@ script = ExtResource("1_glv2v")
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_right = 16
-theme_override_constants/margin_bottom = 16
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=444952785]
 layout_mode = 2
@@ -99,6 +95,13 @@ layout_mode = 2
 [node name="CitizenSprite" type="TextureRect" parent="MarginContainer/VBoxContainer/TopRow/CenterPanel" unique_id=1291161880]
 layout_mode = 2
 
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/TopRow/CenterPanel" unique_id=316649578]
+custom_minimum_size = Vector2(670, 300)
+layout_mode = 2
+texture = ExtResource("2_wkp8b")
+expand_mode = 2
+stretch_mode = 5
+
 [node name="RightPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/TopRow" unique_id=1919826602]
 custom_minimum_size = Vector2(350, 0)
 layout_mode = 2
@@ -138,78 +141,55 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 40
 
 [node name="BottomPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=782304305]
-custom_minimum_size = Vector2(650, 250)
+custom_minimum_size = Vector2(650, 0)
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_trn2v")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/BottomPanel" unique_id=681220280]
 layout_mode = 2
 texture = ExtResource("2_03owx")
+expand_mode = 2
+stretch_mode = 1
 
 [node name="BottomVBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/BottomPanel" unique_id=1613048653]
 custom_minimum_size = Vector2(500, 300)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
-[node name="ScenarioLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=1655552237]
+[node name="ScenarioLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=1873292168]
 layout_mode = 2
-theme_override_font_sizes/font_size = 70
-vertical_alignment = 1
+theme_override_font_sizes/font_size = 50
 
-[node name="DescriptionLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=168015727]
+[node name="DescriptionLabel" type="Label" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=545014324]
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
-vertical_alignment = 1
+theme_override_font_sizes/font_size = 30
 
 [node name="ButtonRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox" unique_id=1762408457]
 layout_mode = 2
+size_flags_horizontal = 4
 alignment = 1
 
 [node name="DocButton1" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/ButtonRow" unique_id=630902188]
 custom_minimum_size = Vector2(80, 30)
 layout_mode = 2
+theme_override_font_sizes/font_size = 20
 
 [node name="DocButton2" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/ButtonRow" unique_id=1122205840]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
+theme_override_font_sizes/font_size = 20
 
 [node name="DocButton3" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/ButtonRow" unique_id=88376180]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
+theme_override_font_sizes/font_size = 20
 
 [node name="DocButton4" type="Button" parent="MarginContainer/VBoxContainer/BottomPanel/BottomVBox/ButtonRow" unique_id=1732033630]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
-
-[node name="FeedbackLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1155210320]
-layout_mode = 2
-
-[node name="ClientWindow" type="PanelContainer" parent="." unique_id=1577414438]
-layout_mode = 0
-offset_left = 705.0
-offset_top = 21.0
-offset_right = 1202.0
-offset_bottom = 306.0
-script = ExtResource("2_uu6xs")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="ClientWindow" unique_id=1803027709]
-layout_mode = 2
-
-[node name="Portrait" type="TextureRect" parent="ClientWindow/VBoxContainer" unique_id=247024055]
-layout_mode = 2
-
-[node name="NameLabel" type="Label" parent="ClientWindow/VBoxContainer" unique_id=144783532]
-layout_mode = 2
-
-[node name="AppearanceLabel" type="Label" parent="ClientWindow/VBoxContainer" unique_id=1149967852]
-layout_mode = 2
-
-[node name="MemoryGreeting" type="Label" parent="ClientWindow/VBoxContainer" unique_id=2082804183]
-layout_mode = 2
-
-[node name="LoreLabel" type="Label" parent="ClientWindow/VBoxContainer" unique_id=2063278653]
-layout_mode = 2
+theme_override_font_sizes/font_size = 20
 
 [node name="TimerBar" type="ProgressBar" parent="." unique_id=1766796709]
 layout_mode = 0
@@ -413,11 +393,15 @@ text = "Close Document"
 script = ExtResource("8_trn2v")
 
 [node name="PanelContainer" type="PanelContainer" parent="TutorialOverlay" unique_id=1760554376]
-layout_direction = 4
-offset_left = 4.0
-offset_top = 653.0
-offset_right = 1904.0
-offset_bottom = 1015.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -260.0
+offset_right = 260.0
+offset_bottom = 395.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TutorialOverlay/PanelContainer" unique_id=1341381696]
 layout_mode = 2
@@ -425,13 +409,15 @@ layout_mode = 2
 [node name="SpeakerName" type="Label" parent="TutorialOverlay/PanelContainer/VBoxContainer" unique_id=1488991848]
 layout_mode = 2
 theme_override_font_sizes/font_size = 60
-text = "MY SKIBIDI MANAGER
-"
+text = "BOSS"
+horizontal_alignment = 1
+vertical_alignment = 3
 
 [node name="DialogueText" type="RichTextLabel" parent="TutorialOverlay/PanelContainer/VBoxContainer" unique_id=547921650]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 30
 fit_content = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TutorialOverlay/PanelContainer/VBoxContainer" unique_id=831459241]
@@ -441,17 +427,17 @@ alignment = 2
 
 [node name="SkipButton" type="Button" parent="TutorialOverlay/PanelContainer/VBoxContainer/HBoxContainer" unique_id=938073836]
 layout_mode = 2
-text = "SKIP>>>"
+text = "SKIP >>>"
 
 [node name="NextButton" type="Button" parent="TutorialOverlay/PanelContainer/VBoxContainer/HBoxContainer" unique_id=75608294]
 layout_mode = 2
-text = "NEXT>"
+text = "NEXT >"
 
 [node name="Highlighter" type="ColorRect" parent="TutorialOverlay" unique_id=289142352]
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
-color = Color(1, 1, 0, 0.69100004)
+color = Color(1, 0, 0, 0.37254903)
 
 [connection signal="pressed" from="EndOfDayReport/MarginContainer/VBoxContainer/ContinueButton" to="EndOfDayReport" method="_on_continue_button_pressed"]
 [connection signal="pressed" from="EndShiftButton" to="." method="_on_end_shift_button_pressed"]
